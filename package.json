@@ -1,0 +1,115 @@
+{
+    "name": "cybercore",
+    "displayName": "cybercore theme & utilities",
+    "description": "cybercore style color theme & extra utils",
+    "version": "1.0.0",
+    "main": "./build/extension.js",
+    "icon": "./images/image.jpg",
+    "publisher": "cactoes",
+    "license": "MIT",
+    "homepage": "https://github.com/cactoes/cybercore#readme",
+    "author": {
+        "name": "cactoes"
+    },
+    "galleryBanner": {
+        "color": "#8ba2c0",
+        "theme": "light"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cactoes/cybercore"
+    },
+    "engines": {
+        "vscode": "^1.92.0"
+    },
+    "keywords": [
+        "cybercore",
+        "cyber",
+        "white"
+    ],
+    "categories": [
+        "Themes",
+        "Snippets",
+        "Other"
+    ],
+    "activationEvents": [
+        "onStartupFinished"
+    ],
+    "scripts": {
+        "vscode:prepublish": "npm run compile && npm run generate",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "lint": "eslint src --ext ts",
+        "generate": "bun run ./generate_dark_theme.ts"
+    },
+    "contributes": {
+        "themes": [
+            {
+                "label": "cybercore",
+                "uiTheme": "vs",
+                "path": "./themes/cybercore-color-theme.json"
+            },
+            {
+                "label": "cybercore dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/cybercore-dark-color-theme.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "cpp",
+                "path": "./snippets/cpp-snippets.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/ts-snippets.json"
+            }
+        ],
+        "commands": [
+            {
+                "command": "cybercore.changeTimerStyle",
+                "title": "change timer style",
+                "category": "cybercore"
+            },
+            {
+                "command": "cybercore.toggleTimerVisibility",
+                "title": "show or hide the timer",
+                "category": "cybercore"
+            }
+        ],
+        "configuration": [
+            {
+                "title": "cybercore",
+                "properties": {
+                    "cybercore.timerShow": {
+                        "default": true,
+                        "type": "boolean",
+                        "description": "show or hide the timer"
+                    },
+                    "cybercore.timerStyle": {
+                        "type": "string",
+                        "default": "normal",
+                        "description": "select timer style",
+                        "enum": [
+                            "normal",
+                            "full"
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    "devDependencies": {
+        "@types/glob": "^8.0.0",
+        "@types/mocha": "^10.0.1",
+        "@types/node": "16.x",
+        "@types/vscode": "^1.74.0",
+        "@typescript-eslint/eslint-plugin": "^5.45.0",
+        "@typescript-eslint/parser": "^5.45.0",
+        "@vscode/test-electron": "^2.2.0",
+        "eslint": "^8.28.0",
+        "glob": "^8.0.3",
+        "mocha": "^10.1.0",
+        "typescript": "^4.9.3"
+    }
+}

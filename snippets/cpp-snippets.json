@@ -1,0 +1,92 @@
+{
+    "header file init": {
+        "prefix": "hh",
+        "body": [
+            "#pragma once\n",
+            "#ifndef __$1${TM_FILENAME_BASE/(.*)/${1:/upcase}/}_HPP__",
+            "#define __$1${TM_FILENAME_BASE/(.*)/${1:/upcase}/}_HPP__\n",
+            "$0\n",
+            "#endif // __$1${TM_FILENAME_BASE/(.*)/${1:/upcase}/}_HPP__"
+        ],
+        "description": "create header file boilerplate"
+    },
+    "include C++ header file": {
+        "prefix": "cc",
+        "body": [
+            "#include \"$1${TM_FILENAME_BASE}.hpp\"",
+            "$0"
+        ],
+        "description": "include corresponding header file"
+    },
+    "namespace template": {
+        "prefix": "ns",
+        "body": [
+            "namespace $1 {",
+            "    $0",
+            "} // namespace $1"
+        ],
+        "description": "namespace template"
+    },
+    "namespace detail template": {
+        "prefix": ["nsd", "detail"],
+        "body": [
+            "namespace detail {",
+            "    $0",
+            "} // namespace detail"
+        ],
+        "description": "namespace detail template"
+    },
+    "class template": {
+        "prefix": [ "cls", "class" ],
+        "body": [
+            "class ${TM_FILENAME_BASE} {",
+            "public:",
+            "    $0",
+            "private:",
+            "};"
+        ]
+    },
+    "main function": {
+        "prefix": [ "mm", "main" ],
+        "body": [
+            "int main(int, char**) {",
+            "    $0",
+            "    return 0;",
+            "}"
+        ]
+    },
+    "define all constructors": {
+        "prefix": [ "dc", "constructors" ],
+        "body": [
+            "${1:ClassName}() = delete;",
+            "${1:ClassName}(const ${1:ClassName}& other) = default;",
+            "${1:ClassName}& operator=(const ${1:ClassName}& other) = default;",
+            "${1:ClassName}(${1:ClassName}&& other) = default;",
+            "${1:ClassName}& operator=(${1:ClassName}&& other) = default;",
+            "~${1:ClassName}() = default;",
+            "$0"
+        ]
+    },
+    "define copy constructors": {
+        "prefix": [ "copyc", "copy constructors" ],
+        "body": [
+            "${1:ClassName}(const ${1:ClassName}& other) = default;",
+            "${1:ClassName}& operator=(const ${1:ClassName}& other) = default;",
+            "$0"
+        ]
+    },
+    "define mvoe constructors": {
+        "prefix": [ "movec", "move constructors" ],
+        "body": [
+            "${1:ClassName}(${1:ClassName}&& other) = default;",
+            "${1:ClassName}& operator=(${1:ClassName}&& other) = default;",
+            "$0"
+        ]
+    },
+    "create virtual pure function": {
+        "prefix": [ "vp", "pure" ],
+        "body": [
+            "virtual $1 $2($3) = 0;$0"
+        ]
+    }
+}

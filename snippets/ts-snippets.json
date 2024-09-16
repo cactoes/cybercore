@@ -1,0 +1,20 @@
+{
+    "namespace template": {
+        "prefix": "ns",
+        "body": [
+            "namespace $1 {",
+            "    $0",
+            "} // namespace $1"
+        ],
+        "description": "namespace template"
+    },
+    "namespace detail template": {
+        "prefix": ["nsd", "detail"],
+        "body": [
+            "namespace detail {",
+            "    $0",
+            "} // namespace detail"
+        ],
+        "description": "namespace detail template"
+    }
+}
