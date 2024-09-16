@@ -26,10 +26,10 @@ these are supported others might not work properly
 
 ## preview
 ### light
-<img src=https://raw.githubusercontent.com/cactoes/cybercore/main/images/light_mode_preview.png width=1148 height=809>
+<img src=https://raw.githubusercontent.com/cactoes/cybercore/master/images/light_mode_preview.png width=1148 height=809>
 
 ### dark
-<img src=https://raw.githubusercontent.com/cactoes/cybercore/main/images/dark_mode_preview.png width=1148 height=809>
+<img src=https://raw.githubusercontent.com/cactoes/cybercore/master/images/dark_mode_preview.png width=1148 height=809>
 
 ## logo
 [https://nl.pinterest.com/pin/584905070355459971/](https://nl.pinterest.com/pin/584905070355459971/)
