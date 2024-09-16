@@ -2,10 +2,10 @@
     "name": "cybercore",
     "displayName": "cybercore theme & utilities",
     "description": "cybercore style color theme & extra utils",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "main": "./build/extension.js",
     "icon": "./images/image.jpg",
-    "publisher": "cactoes",
+    "publisher": "krnintelligence",
     "license": "MIT",
     "homepage": "https://github.com/cactoes/cybercore#readme",
     "author": {
@@ -53,6 +53,16 @@
                 "label": "cybercore dark",
                 "uiTheme": "vs-dark",
                 "path": "./themes/cybercore-dark-color-theme.json"
+            },
+            {
+                "label": "cybercore gold",
+                "uiTheme": "vs",
+                "path": "./themes/cybercore-gold-color-theme.json"
+            },
+            {
+                "label": "cybercore gold dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/cybercore-gold-dark-color-theme.json"
             }
         ],
         "snippets": [
