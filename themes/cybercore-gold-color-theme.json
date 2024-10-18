@@ -422,6 +422,10 @@
         "peekViewResult.background": "#d6d6d6",
         "peekViewTitle.background": "#d6d6d6",
 
+        "peekViewEditor.matchHighlightBackground": "#caa773",
+        "peekViewResult.selectionBackground": "#caa773",
+        "peekViewResult.matchHighlightBackground": "#caa773",
+
         "panel.background": "#d6d6d6",
         "panel.border": "#949494",
         "panelTitle.activeBorder": "#949494",
