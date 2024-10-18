@@ -66,3 +66,4 @@ function generate_dark_theme_for(in_file: string, out_file: string): void {
 
 generate_dark_theme_for("cybercore-color-theme.json", "cybercore-dark-color-theme.json");
 generate_dark_theme_for("cybercore-gold-color-theme.json", "cybercore-gold-dark-color-theme.json");
+generate_dark_theme_for("cybercore-purple-color-theme.json", "cybercore-purple-dark-color-theme.json");
