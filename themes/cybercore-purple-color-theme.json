@@ -383,7 +383,7 @@
         "sideBarSectionHeader.background": "#c4c4c4",
 
         "tab.border": "#FFFFFF33",
-        "tab.activeBorder": "#949494",
+        "tab.activeBorder": "#9083cc",
         "tab.inactiveBackground": "#d6d6d6A0",
         "tab.inactiveForeground": "#525252",
         "tab.activeBackground": "#dddddd",
@@ -439,6 +439,8 @@
         "statusBarItem.activeBackground": "#52525280",
         "statusBarItem.hoverBackground": "#5252521a",
 
+        "progressBar.background": "#9083cc",
+
         "titleBar.activeBackground": "#d6d6d6",
         "titleBar.activeForeground": "#525252",
 
@@ -450,6 +452,7 @@
         "debugToolBar.background": "#d6d6d6",
         "selection.background": "#958bc060",
         "terminal.selectionBackground": "#958bc060",
+        "terminal.border":"#9083cc",
 
         "gitDecoration.addedResourceForeground": "#9083cc",
         "gitDecoration.conflictingResourceForeground": "#9495aa",
