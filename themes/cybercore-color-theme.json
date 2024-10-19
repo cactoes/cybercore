@@ -295,7 +295,7 @@
             "name": "C++ preprocessor macros",
             "scope": "source.cpp meta.preprocessor, entity.name.function.preprocessor.cpp",
             "settings": {
-                "foreground": "#b58bc0"
+                "foreground": "#8bbac0"
             }
         },
         {
