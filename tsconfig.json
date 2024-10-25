@@ -10,5 +10,5 @@
 		"rootDir": "src",
 		"strict": true
 	},
-	"exclude": [ "./generate_dark_theme.ts" ]
+	"exclude": [ "./generate_dark_theme.ts", "./generate_colorized_theme.ts" ]
 }
