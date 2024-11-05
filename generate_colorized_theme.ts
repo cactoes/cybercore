@@ -55,11 +55,11 @@ function generate_dark_theme_for(in_file: string, out_file: string, color_theme_
     fs.writeFileSync(path.join(__dirname, "themes", out_file), JSON.stringify(theme, null, 4));
 }
 
-generate_dark_theme_for("cybercore-color-theme.json", "cybercore-tinted-color-theme.json", "8ba2c0", 0.2);
-generate_dark_theme_for("cybercore-dark-color-theme.json", "cybercore-tinted-dark-color-theme.json", "768aa3", 0.1);
+generate_dark_theme_for("cybercore-color-theme.json", "cybercore-tinted-color-theme.json", "8ba2c0", 0.4);
+generate_dark_theme_for("cybercore-dark-color-theme.json", "cybercore-tinted-dark-color-theme.json", "768aa3", 0.3);
 
-generate_dark_theme_for("cybercore-gold-color-theme.json", "cybercore-tinted-gold-color-theme.json", "d6b997", 0.2);
-generate_dark_theme_for("cybercore-gold-dark-color-theme.json", "cybercore-tinted-gold-dark-color-theme.json", "b69d80", 0.1);
+generate_dark_theme_for("cybercore-gold-color-theme.json", "cybercore-tinted-gold-color-theme.json", "d6b997", 0.4);
+generate_dark_theme_for("cybercore-gold-dark-color-theme.json", "cybercore-tinted-gold-dark-color-theme.json", "b69d80", 0.3);
 
-generate_dark_theme_for("cybercore-purple-color-theme.json", "cybercore-tinted-purple-color-theme.json", "958bc0", 0.2);
-generate_dark_theme_for("cybercore-purple-dark-color-theme.json", "cybercore-tinted-purple-dark-color-theme.json", "7f76a3", 0.1);
+generate_dark_theme_for("cybercore-purple-color-theme.json", "cybercore-tinted-purple-color-theme.json", "958bc0", 0.4);
+generate_dark_theme_for("cybercore-purple-dark-color-theme.json", "cybercore-tinted-purple-dark-color-theme.json", "7f76a3", 0.3);

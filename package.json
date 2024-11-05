@@ -2,7 +2,7 @@
     "name": "cybercore",
     "displayName": "cybercore theme & utilities",
     "description": "cybercore style color theme & extra utils",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "main": "./build/extension.js",
     "icon": "./images/image.jpg",
     "publisher": "krnintelligence",
