@@ -58,28 +58,28 @@
     "define all constructors": {
         "prefix": [ "dc", "constructors" ],
         "body": [
-            "${1:ClassName}() = delete;",
-            "${1:ClassName}(const ${1:ClassName}& other) = default;",
-            "${1:ClassName}& operator=(const ${1:ClassName}& other) = default;",
-            "${1:ClassName}(${1:ClassName}&& other) = default;",
-            "${1:ClassName}& operator=(${1:ClassName}&& other) = default;",
-            "~${1:ClassName}() = default;",
+            "${1:class_name}() = delete;",
+            "${1:class_name}(const ${1:class_name}& other) = default;",
+            "${1:class_name}& operator=(const ${1:class_name}& other) = default;",
+            "${1:class_name}(${1:class_name}&& other) = default;",
+            "${1:class_name}& operator=(${1:class_name}&& other) = default;",
+            "~${1:class_name}() = default;",
             "$0"
         ]
     },
     "define copy constructors": {
         "prefix": [ "copyc", "copy constructors" ],
         "body": [
-            "${1:ClassName}(const ${1:ClassName}& other) = default;",
-            "${1:ClassName}& operator=(const ${1:ClassName}& other) = default;",
+            "${1:class_name}(const ${1:class_name}& other) = default;",
+            "${1:class_name}& operator=(const ${1:class_name}& other) = default;",
             "$0"
         ]
     },
     "define mvoe constructors": {
         "prefix": [ "movec", "move constructors" ],
         "body": [
-            "${1:ClassName}(${1:ClassName}&& other) = default;",
-            "${1:ClassName}& operator=(${1:ClassName}&& other) = default;",
+            "${1:class_name}(${1:class_name}&& other) = default;",
+            "${1:class_name}& operator=(${1:class_name}&& other) = default;",
             "$0"
         ]
     },

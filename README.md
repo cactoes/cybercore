@@ -5,6 +5,8 @@ a project inspired by cybercore
 - themes
     - light
     - dark
+    - tinted light
+    - tinted dark
 - extension
     - session timer in the bottom right
     - line : column numbers

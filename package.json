@@ -2,7 +2,7 @@
     "name": "cybercore",
     "displayName": "cybercore theme & utilities",
     "description": "cybercore style color theme & extra utils",
-    "version": "2.1.0",
+    "version": "2.2.0",
     "main": "./build/extension.js",
     "icon": "./images/image.jpg",
     "publisher": "krnintelligence",
@@ -62,6 +62,16 @@
                 "label": "cybercore tinted dark",
                 "uiTheme": "vs-dark",
                 "path": "./themes/cybercore-tinted-dark-color-theme.json"
+            },
+            {
+                "label": "cybercore white",
+                "uiTheme": "vs",
+                "path": "./themes/cybercore-white-color-theme.json"
+            },
+            {
+                "label": "cybercore black",
+                "uiTheme": "vs-dark",
+                "path": "./themes/cybercore-black-color-theme.json"
             },
             {
                 "label": "cybercore gold",
