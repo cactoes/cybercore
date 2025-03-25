@@ -5,17 +5,17 @@
         "description": "create automatic timestamped todo"
     },
     "create fixme timestamp": {
-        "prefix": "todo",
+        "prefix": "fixme",
         "body": "// FIXME @since ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR} -- ${CURRENT_HOUR}:${CURRENT_MINUTE}\n// $1",
         "description": "create automatic timestamped fixme"
     },
     "create bug timestamp": {
-        "prefix": "todo",
+        "prefix": "bug",
         "body": "// BUG @since ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR} -- ${CURRENT_HOUR}:${CURRENT_MINUTE}\n// $1",
         "description": "create automatic timestamped bug"
     },
     "create clean timestamp": {
-        "prefix": "todo",
+        "prefix": "clean",
         "body": "// CLEAN @since ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR} -- ${CURRENT_HOUR}:${CURRENT_MINUTE}\n// $1",
         "description": "create automatic timestamped clean"
     }

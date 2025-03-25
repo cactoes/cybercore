@@ -2,7 +2,7 @@
     "name": "cybercore",
     "displayName": "cybercore theme & utilities",
     "description": "cybercore style color theme & extra utils",
-    "version": "2.3.0",
+    "version": "2.3.1",
     "main": "./build/extension.js",
     "icon": "./images/image.jpg",
     "publisher": "krnintelligence",
@@ -123,9 +123,34 @@
                 "language": "typescript",
                 "path": "./snippets/ts-snippets.json"
             },
+            
             {
-                "language": "*",
-                "path": "./snippets/cybercore.code-snippets"
+                "language": "c",
+                "path": "./snippets/cybercore-snippets.json"
+            },
+            {
+                "language": "cpp",
+                "path": "./snippets/cybercore-snippets.json"
+            },
+            {
+                "language": "rust",
+                "path": "./snippets/cybercore-snippets.json"
+            },
+            {
+                "language": "csharp",
+                "path": "./snippets/cybercore-snippets.json"
+            },
+            {
+                "language": "java",
+                "path": "./snippets/cybercore-snippets.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/cybercore-snippets.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/cybercore-snippets.json"
             }
         ],
         "commands": [
