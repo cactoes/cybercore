@@ -1,0 +1,22 @@
+{
+    "create todo timestamp": {
+        "prefix": "todo",
+        "body": "// TODO @since ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR} -- ${CURRENT_HOUR}:${CURRENT_MINUTE}\n// $1",
+        "description": "create automatic timestamped todo"
+    },
+    "create fixme timestamp": {
+        "prefix": "todo",
+        "body": "// FIXME @since ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR} -- ${CURRENT_HOUR}:${CURRENT_MINUTE}\n// $1",
+        "description": "create automatic timestamped fixme"
+    },
+    "create bug timestamp": {
+        "prefix": "todo",
+        "body": "// BUG @since ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR} -- ${CURRENT_HOUR}:${CURRENT_MINUTE}\n// $1",
+        "description": "create automatic timestamped bug"
+    },
+    "create clean timestamp": {
+        "prefix": "todo",
+        "body": "// CLEAN @since ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR} -- ${CURRENT_HOUR}:${CURRENT_MINUTE}\n// $1",
+        "description": "create automatic timestamped clean"
+    }
+}
