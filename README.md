@@ -9,7 +9,7 @@ a project inspired by cybercore
     - tinted dark
 - extension
     - session timer in the bottom right
-    - line : column numbers
+    - (selected) line : column numbers
 - user snippets
     - c++
     - typescript
