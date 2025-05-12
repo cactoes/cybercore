@@ -18,5 +18,14 @@
         "prefix": "clean",
         "body": "// CLEAN @since ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR} -- ${CURRENT_HOUR}:${CURRENT_MINUTE}\n// $1",
         "description": "create automatic timestamped clean"
+    },
+    "file comment": {
+        "prefix": "header",
+        "body": [
+            "//==========================================",
+            "/// @file       ${TM_FILENAME}",
+            "/// @brief      $1",
+            "//=========================================="
+        ]
     }
 }
